@@ -25,7 +25,7 @@ select * from Blog where id = #{id}
 </insert>
 
  <select id="selectMember" parameterType="com.mirror.domain.Member" resultType="com.mirror.domain.Member" >
- 	select * from Member where id=#{email} and pw=#{pw}
+ 	select * from Member where id=#{id} and pw=#{pw}
  </select>
  
  <update id="updateMember" parameterType="com.mirror.domain.Member">

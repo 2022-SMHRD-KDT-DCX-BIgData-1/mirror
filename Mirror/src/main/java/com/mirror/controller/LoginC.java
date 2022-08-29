@@ -22,10 +22,10 @@ public class LoginC extends HttpServlet {
 		HttpSession session = request.getSession();
 		Member vo ;
 		request.setCharacterEncoding("utf-8");
-		String email =request.getParameter("email");
+		String id =request.getParameter("id");
 		String pw =request.getParameter("pw");
 		
-		vo = new Member(email,pw);
+		vo = new Member(id,pw);
 		MemberDAO dao = new MemberDAO();
 		Member loginMember =dao.selectMember(vo);
 		
@@ -36,7 +36,7 @@ public class LoginC extends HttpServlet {
 			
 		}
 		else {
-			System.out.println("로그인 실패");
+			System.out.println("로그인 실패");			
 			
 		}
 	
