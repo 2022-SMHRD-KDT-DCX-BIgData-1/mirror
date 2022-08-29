@@ -1,15 +1,14 @@
 package com.mirror.domain;
 
 public class Member {
-	private String email;
+	private String id;
 	private String pw;
-	private String tel;
-	private String address;
-	public String getEmail() {
-		return email;
+	private String nick;
+	public String getId() {
+		return id;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setId(String id) {
+		this.id = id;
 	}
 	public String getPw() {
 		return pw;
@@ -17,31 +16,26 @@ public class Member {
 	public void setPw(String pw) {
 		this.pw = pw;
 	}
-	public String getTel() {
-		return tel;
+	public String getNick() {
+		return nick;
 	}
-	public void setTel(String tel) {
-		this.tel = tel;
+	public void setNick(String nick) {
+		this.nick = nick;
 	}
-	public String getAddress() {
-		return address;
-	}
-	public void setAddress(String address) {
-		this.address = address;
-	}
-	public Member(String email, String pw, String tel, String address) {
-		
-		this.email = email;
+	public Member(String id, String pw, String nick) {
+		super();
+		this.id = id;
 		this.pw = pw;
-		this.tel = tel;
-		this.address = address;
+		this.nick = nick;
+	}
+	public Member(String id, String pw) {
+		super();
+		this.id = id;
+		this.pw = pw;
 	}
 	
-	public Member(String email, String pw) {
-		
-		this.email = email;
-		this.pw = pw;
-	}
+			
+	
 	
 	
 	
