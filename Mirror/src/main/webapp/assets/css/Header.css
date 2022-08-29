@@ -1,0 +1,31 @@
+@charset "UTF-8";
+#HeaderLayout{
+	position: relative;
+    height: 100px;
+    background-color: #f5f5dc;;
+    border-bottom: 1px solid #e4e8eb;
+
+	
+}
+ #logo{
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     width :100px;
+     height:100px;
+ }
+ 
+ #menu{
+ 
+  position: absolute;
+     top: 0px;
+     right: 10px;
+     width :100px;
+     height:100px;
+ 
+ }
+ 
+body{
+	
+	background-color: #f5f5dc;
+}

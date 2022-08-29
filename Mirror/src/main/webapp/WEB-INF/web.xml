@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>JoinC</servlet-name>
+  	<display-name>JoinC</display-name>
+  	<description></description>
+  	<servlet-class>com.mirror.controller.JoinC</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoginC</servlet-name>
+  	<display-name>LoginC</display-name>
+  	<description></description>
+  	<servlet-class>com.mirror.controller.LoginC</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LogoutC</servlet-name>
+  	<display-name>LogoutC</display-name>
+  	<description></description>
+  	<servlet-class>com.mirror.controller.LogoutC</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateC</servlet-name>
+  	<display-name>UpdateC</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.UpdateC</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>JoinC</servlet-name>
+  	<url-pattern>/JoinC</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginC</servlet-name>
+  	<url-pattern>/LoginC</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LogoutC</servlet-name>
+  	<url-pattern>/LogoutC</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateC</servlet-name>
+  	<url-pattern>/UpdateC</url-pattern>
+  </servlet-mapping>
+</web-app>

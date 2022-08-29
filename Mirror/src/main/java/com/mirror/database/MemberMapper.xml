@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <!-- mapper태그 : SQL문 정리하는 태그 -->
+  <!-- namespace : id를 구룹화, mapper의 경로를 입력 -->
+<mapper namespace="com.mirror.database.MemberMapper.xml">
+<!-- select, insert, update, delete 태그들이 존재한다. -->
+<!-- id : 해당 태그의 고유한 식별자 -->
+<!-- parameterType : 매개변수 타입 -->
+<!-- resultType : 리턴타입 -->
+<!-- 바인드 변수 처럼 #{필드명=컬럼명} -->
+<!-- <select id="selectBlog" resultType="Blog">
+
+select * from Blog where id = #{id}
+
+  </select>
+
+
+ --> 
+ <!-- sql문에 세미콜론 쓰지 않기 -->
+ 
+<insert id="insertMember" parameterType="com.mirror.domain.Member">
+ 	insert into Member_dark values (#{email}, #{pw}, #{tel}, #{address})
+</insert>
+
+ <select id="selectMember" parameterType="com.mirror.domain.Member" resultType="com.mirror.domain.Member" >
+ 	select * from Member_dark where email=#{email} and pw=#{pw}
+ </select>
+ 
+ <update id="updateMember" parameterType="com.mirror.domain.Member">
+ 	update Member_dark set pw=#{pw}, tel=#{tel}, address=#{address} where email=#{email}
+</update>
+ 
+ <delete id="deleteMember" parameterType="com.mirror.domain.Member">
+ 	delete from Member_dark where email=#{email}
+</delete>
+
+</mapper>
