@@ -10,10 +10,9 @@
 <body>
 	<h1>회원가입</h1>
 	<form action="JoinC">
-		이메일 <input type="text" name="email"><br>
+		아이디 <input type="text" name="id"><br>
 		비밀번호 <input type="password" name="pw"><br>
-		전화번호 <input type="text" name="tel"><br>
-		주소 <input type="text" name="address"><br>
+		닉네임 <input type="text" name="nick"><br>
 		<input type="submit" value="회원가입">
 		</form>
 	</form>

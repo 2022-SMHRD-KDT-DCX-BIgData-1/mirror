@@ -1,3 +1,4 @@
+<%@page import="com.mirror.domain.Member"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
@@ -11,7 +12,10 @@
 </head>
 
 <body>
+<%
+Member loingMember = (Member)session.getAttribute("loginMember");
 
+%>
 <div id="HeaderLayout">
 	<a href="main.jsp"><img  id="logo" src="https://blog.kakaocdn.net/dn/CNxUY/btqw7dnElRU/HuVZgvpT6J8n4aEYFathEk/img.jpg"></a>
 	<p id="menu">

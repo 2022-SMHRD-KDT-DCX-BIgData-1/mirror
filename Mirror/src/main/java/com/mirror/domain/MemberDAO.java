@@ -56,11 +56,11 @@ public class MemberDAO {
 	 
 	 
 	 
-	 public int updateMember(Member loginMember) {
+	 public int updateMember(Member Member) {
 		 
 		 int cnt = 0;
 		 try {
-			 cnt =sqlSession.update("updateMember", loginMember);
+			 cnt =sqlSession.update("updateMember", Member);
 			 if(cnt >0) {
 				 System.out.println("회원정보 수정 성공");
 				 sqlSession.commit();

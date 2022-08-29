@@ -30,8 +30,8 @@
 		%>
 		<table>
 			<tr>
-				<td>Email</td>
-				<td><%=vo.getEmail()%></td>
+				<td>아이디</td>
+				<td><%=vo.getId()%></td>
 			</tr>
 		</table>
 		<a href="main.jsp"><input type="button" value="메인페이지로"></a> </nav>

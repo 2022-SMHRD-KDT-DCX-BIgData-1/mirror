@@ -14,11 +14,11 @@ public class SqlSessionManager {
 	static{
 		try {
 			//DB 환경설정 파일 경로
-			String resource = "com/smhrd/database/config.xml";
+			String resource = "com/mirror/database/config.xml";
 			InputStream inputStream;
 			inputStream = Resources.getResourceAsStream(resource);
 			sqlSessionFactory =
-					  new SqlSessionFactoryBuilder().build(inputStream);
+			new SqlSessionFactoryBuilder().build(inputStream);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
