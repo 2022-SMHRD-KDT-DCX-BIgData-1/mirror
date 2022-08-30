@@ -39,7 +39,7 @@ public class JoinC extends HttpServlet {
 		}
 		else {
 			System.out.println("회원가입 실패");
-			response.sendRedirect("main.jsp");
+			response.sendRedirect("Join.jsp");
 		}
 	}
 

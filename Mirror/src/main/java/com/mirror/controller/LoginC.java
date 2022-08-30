@@ -37,7 +37,7 @@ public class LoginC extends HttpServlet {
 		}
 		else {
 			System.out.println("로그인 실패");	
-			response.sendRedirect("main.jsp");
+			response.sendRedirect("Login.jsp");
 			
 		}
 	

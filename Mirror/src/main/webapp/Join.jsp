@@ -14,7 +14,8 @@
 		비밀번호 <input type="password" name="pw"><br>
 		닉네임 <input type="text" name="nick"><br>
 		<input type="submit" value="회원가입">
-		<input type="submit" value="돌아가기">
+		<a href="main.jsp"><input type="button" value="돌아가기"></a>
+		<!--  -->
 	</form>
 </body>
 </html>
