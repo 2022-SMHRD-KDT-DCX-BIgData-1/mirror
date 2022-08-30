@@ -10,7 +10,6 @@
 <link href="assets/css/index.css" rel= "stylesheet">
 <link href="assets/css/Header.css" rel= "stylesheet">
 </head>
-
 <body>
 <%
 Member loingMember = (Member)session.getAttribute("loginMember");
@@ -19,8 +18,8 @@ Member loingMember = (Member)session.getAttribute("loginMember");
 <div id="HeaderLayout">
 	<a href="main.jsp"><img  id="logo" src="https://blog.kakaocdn.net/dn/CNxUY/btqw7dnElRU/HuVZgvpT6J8n4aEYFathEk/img.jpg"></a>
 	<p id="menu">
-		<a href="Login.jsp">로그인</a>
-		<a href="Join.jsp">회원가입</a>
+		<a href="LogoutC">로그아웃</a>
+		<a href="Mypage.jsp">마이페이지</a>
 	</p>
 	
 </div>

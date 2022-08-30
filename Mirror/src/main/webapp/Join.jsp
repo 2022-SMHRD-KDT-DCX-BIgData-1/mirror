@@ -14,7 +14,7 @@
 		비밀번호 <input type="password" name="pw"><br>
 		닉네임 <input type="text" name="nick"><br>
 		<input type="submit" value="회원가입">
-		</form>
+		<input type="submit" value="돌아가기">
 	</form>
 </body>
 </html>

@@ -14,6 +14,8 @@
 		아이디 <input type="text" name="id"><br>
 		비밀번호 <input type="password" name="pw"><br>
 		<input type="submit" value="로그인">
+		<input type="submit" value="돌아가기">
+		
 	</form>
 </body>
 </html>
