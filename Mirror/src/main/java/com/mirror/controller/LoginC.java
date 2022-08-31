@@ -22,10 +22,10 @@ public class LoginC extends HttpServlet {
 		HttpSession session = request.getSession();
 		Member vo ;
 		request.setCharacterEncoding("utf-8");
-		String id =request.getParameter("id");
-		String pw =request.getParameter("pw");
+		String m_id =request.getParameter("m_id");
+		String m_pw =request.getParameter("m_pw");
 		
-		vo = new Member(id,pw);
+		vo = new Member(m_id, m_pw);
 		MemberDAO dao = new MemberDAO();
 		Member loginMember =dao.selectMember(vo);
 		

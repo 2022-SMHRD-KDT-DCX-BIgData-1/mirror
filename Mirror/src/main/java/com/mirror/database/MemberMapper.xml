@@ -21,19 +21,19 @@ select * from Blog where id = #{id}
  <!-- sql문에 세미콜론 쓰지 않기 -->
  
 <insert id="insertMember" parameterType="com.mirror.domain.Member">
- 	insert into Member values (#{id}, #{pw}, #{nick})
+ 	insert into Member values (#{m_no}, #{m_id}, #{m_pw}, #{m_nick})
 </insert>
 
  <select id="selectMember" parameterType="com.mirror.domain.Member" resultType="com.mirror.domain.Member" >
- 	select * from Member where id=#{id} and pw=#{pw}
+ 	select * from Member where id=#{m_id} and pw=#{m_pw}
  </select>
  
  <update id="updateMember" parameterType="com.mirror.domain.Member">
- 	update Member set pw=#{pw}, nick=#{nick} where id=#{id}
+ 	update Member set pw=#{m_pw}, nick=#{m_nick} where id=#{m_id}
 </update>
  
  <delete id="deleteMember" parameterType="com.mirror.domain.Member">
- 	delete from Member where id=#{id}
+ 	delete from Member where id=#{m_id}
 </delete>
 
 </mapper>

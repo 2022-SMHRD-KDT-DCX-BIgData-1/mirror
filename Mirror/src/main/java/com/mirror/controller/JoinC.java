@@ -19,11 +19,12 @@ public class JoinC extends HttpServlet {
 	
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
-		String id = request.getParameter("id");
-		String pw = request.getParameter("pw");
-		String nick =request.getParameter("nick");
+		int m_no = 0;
+		String m_id = request.getParameter("m_id");
+		String m_pw = request.getParameter("m_pw");
+		String m_nick =request.getParameter("m_nick");
 		
-		Member vo= new Member(id, pw, nick);
+		Member vo= new Member(m_no, m_id, m_pw, m_nick);
 		
 		MemberDAO dao = new MemberDAO();
 		int cnt = dao.insertMember(vo);

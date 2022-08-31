@@ -31,7 +31,7 @@
 		<table>
 			<tr>
 				<td>아이디</td>
-				<td><%=vo.getId()%></td>
+				<td><%=vo.getM_id()%></td>
 			</tr>
 		</table>
 		<a href="main.jsp"><input type="button" value="메인페이지로"></a> </nav>

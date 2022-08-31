@@ -10,9 +10,9 @@
 <body>
 	<h1>회원가입</h1>
 	<form action="JoinC">
-		아이디 <input type="text" name="id"><br>
-		비밀번호 <input type="password" name="pw"><br>
-		닉네임 <input type="text" name="nick"><br>
+		아이디 <input type="text" name="m_id"><br>
+		비밀번호 <input type="password" name="m_pw"><br>
+		닉네임 <input type="text" name="m_nick"><br>
 		<input type="submit" value="회원가입">
 		<a href="main.jsp"><input type="button" value="돌아가기"></a>
 		<!--  -->
