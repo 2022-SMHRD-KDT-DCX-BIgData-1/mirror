@@ -11,8 +11,8 @@
 <body>
 	<h1>로그인 페이지</h1>
 	<form action="LoginC" method="post">
-		아이디 <input type="text" name="id"><br>
-		비밀번호 <input type="password" name="pw"><br>
+		아이디 <input type="text" name="m_id"><br>
+		비밀번호 <input type="password" name="m_pw"><br>
 		<input type="submit" value="로그인">
 		<a href="main.jsp"><input type="button" value="돌아가기"></a>
 		

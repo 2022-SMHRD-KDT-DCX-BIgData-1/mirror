@@ -21,20 +21,20 @@
 	<!-- Wrapper -->
 	<div id="wrapper">
 		<!-- Menu -->
-		<nav id="Update"> <font size="8">회원가입성공</font>
-		<br>
+		<nav id="Update"> <font size="8">회원가입성공</font><br>
+		<!-- <br>
 		정보를 확인하세요<br>
-		<br>
+		<br> -->
 		<% 
 		Member vo = (Member)request.getAttribute("joinInfo");
 		%>
-		<table>
+		<%-- <table>
 			<tr>
 				<td>아이디</td>
 				<td><%=vo.getM_id()%></td>
 			</tr>
-		</table>
-		<a href="main.jsp"><input type="button" value="메인페이지로"></a> </nav>
+		</table> --%>
+		<a href="main.jsp"><input type="button" value="ok"></a> </nav>
 	</div>
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>

@@ -36,11 +36,20 @@ public class Member {
 		this.m_pw = m_pw;
 		this.m_nick = m_nick;
 	}
+	public Member(String m_id, String m_pw, String m_nick) {
+		super();
+		this.m_id = m_id;
+		this.m_pw = m_pw;
+		this.m_nick = m_nick;
+	}
 	public Member(String m_id, String m_pw) {
 		super();
 		this.m_id = m_id;
 		this.m_pw = m_pw;
 	}
+	
+	
+	
 	
 	
 	
