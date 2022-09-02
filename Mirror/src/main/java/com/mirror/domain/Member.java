@@ -30,20 +30,20 @@ public class Member {
 		this.m_nick = m_nick;
 	}
 	public Member(int m_no, String m_id, String m_pw, String m_nick) {
-		super();
+//		super();
 		this.m_no = m_no;
 		this.m_id = m_id;
 		this.m_pw = m_pw;
 		this.m_nick = m_nick;
 	}
 	public Member(String m_id, String m_pw, String m_nick) {
-		super();
+//		super();
 		this.m_id = m_id;
 		this.m_pw = m_pw;
 		this.m_nick = m_nick;
 	}
 	public Member(String m_id, String m_pw) {
-		super();
+//		super();
 		this.m_id = m_id;
 		this.m_pw = m_pw;
 	}
