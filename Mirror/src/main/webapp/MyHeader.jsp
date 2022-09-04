@@ -10,8 +10,10 @@
 <div id="HeaderLayout">
 	<a href="MyPage.jsp"><img  id="logo" src="https://blog.kakaocdn.net/dn/CNxUY/btqw7dnElRU/HuVZgvpT6J8n4aEYFathEk/img.jpg"></a>
 	<p id="menu">
-		<a href="Reply.jsp">댓글관리</a>
-		<a href="Join.jsp">찜한곳/찜한곳 길찾기</a>
+		<a href="#">댓글관리</a>
+		<a href="#">찜한곳/찜한곳 길찾기</a>
+		<a href="Update.jsp">회원정보수정</a>
+		<a href="Delete.jsp">회원탈퇴</a>
 	</p>
 	
 </div>	

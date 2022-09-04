@@ -1,5 +1,6 @@
 package com.mirror.domain;
 
+
 public class Member {
 	private int m_no;
 	private String m_id;
@@ -29,12 +30,19 @@ public class Member {
 	public void setM_nick(String m_nick) {
 		this.m_nick = m_nick;
 	}
+//	public Member(int m_no) {
+//		
+//	}
+	
 	public Member(int m_no, String m_id, String m_pw, String m_nick) {
 //		super();
 		this.m_no = m_no;
 		this.m_id = m_id;
 		this.m_pw = m_pw;
 		this.m_nick = m_nick;
+	}
+	public Member() {
+//		super();
 	}
 	public Member(String m_id, String m_pw, String m_nick) {
 //		super();

@@ -19,11 +19,11 @@
 					<nav id="Update">	
 						<ul class="actions vertical">
 							<li><h5>회원정보수정</h5></li>
-								<form action="UpdateCon" method="post">
-									<li>접속한 Email :<%=loginMember.getEmail()%></li>
-									<li><input name="pw" type="password" placeholder="PW를 입력하세요" style="width: 500px; margin: 0 auto;"></li>
-									<li><input name="tel" type="text" placeholder="전화번호를 입력하세요" style="width: 500px; margin: 0 auto;"></li>
-									<li><input  name="address" type="text" placeholder="집주소를 입력하세요" style="width: 500px; margin: 0 auto;"></li>
+								<form action="UpdateC" method="post">
+									<li>접속한 아이디:<%=loginMember.getM_id()%></li>
+									<li><input name="m_id" type="password" placeholder="아이디를 입력하세요" style="width: 500px; margin: 0 auto;"></li>
+									<li><input name="m_pw" type="text" placeholder="비밀번호를 입력하세요" style="width: 500px; margin: 0 auto;"></li>
+									<li><input  name="m_nick" type="text" placeholder="별명을 입력하세요" style="width: 500px; margin: 0 auto;"></li>
 									<li><input type="submit" value="회원정보 수정" class="button fit" style="width: 500px; margin: 0 auto;"></li>
 								</form>
 						</ul>

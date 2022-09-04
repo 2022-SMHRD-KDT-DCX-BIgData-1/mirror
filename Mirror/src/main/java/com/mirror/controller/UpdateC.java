@@ -18,17 +18,17 @@ public class UpdateC extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
-		String pw =request.getParameter("pw");
-		String tel = request.getParameter("tel");
-		String address =request.getParameter("address");
+		String m_id =request.getParameter("m_id");
+		String m_pw = request.getParameter("m_pw");
+		String m_nick =request.getParameter("m_nick");
 		HttpSession session = request.getSession();
 		
 		Member loginMember = (Member)session.getAttribute("loginMember");
-		Member updateMember = new Member(loginMember.getEmail(), pw, tel, address);
+		Member updateMember = new Member(loginMember.getM_id(), m_pw, m_nick);
 		
-		loginMember.setPw(updateMember.getPw());
-		loginMember.setTel(updateMember.getTel());
-		loginMember.setAddress(updateMember.getAddress());
+		loginMember.setM_id(updateMember.getM_id());
+		loginMember.setM_pw(updateMember.getM_pw());
+		loginMember.setM_nick(updateMember.getM_nick());
 		
 		MemberDAO dao = new MemberDAO();
 		int cnt = dao.updateMember(loginMember);

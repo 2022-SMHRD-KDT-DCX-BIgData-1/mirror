@@ -16,7 +16,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/Main.css" />
-		<link rel="stylesheet" href="webapp/quickmenu.css" />
+		<link rel="stylesheet" href="assets/css/quickmenu.css" />
 		<script src="webapp/jquery-3.6.0 min.js"></script>
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
