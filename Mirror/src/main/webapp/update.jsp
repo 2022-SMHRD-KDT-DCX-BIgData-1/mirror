@@ -21,9 +21,9 @@
 							<li><h5>회원정보수정</h5></li>
 								<form action="UpdateC" method="post">
 									<li>접속한 아이디:<%=loginMember.getM_id()%></li>
-									<li><input name="m_id" type="password" placeholder="아이디를 입력하세요" style="width: 500px; margin: 0 auto;"></li>
-									<li><input name="m_pw" type="text" placeholder="비밀번호를 입력하세요" style="width: 500px; margin: 0 auto;"></li>
 									<li><input  name="m_nick" type="text" placeholder="별명을 입력하세요" style="width: 500px; margin: 0 auto;"></li>
+									<li><input name="m_pw" type="password" placeholder="비밀번호를 입력하세요" style="width: 500px; margin: 0 auto;"></li>
+									<li><input name="m_pw" type="text" placeholder="비밀번호를 입력하세요" style="width: 500px; margin: 0 auto;"></li>
 									<li><input type="submit" value="회원정보 수정" class="button fit" style="width: 500px; margin: 0 auto;"></li>
 								</form>
 						</ul>

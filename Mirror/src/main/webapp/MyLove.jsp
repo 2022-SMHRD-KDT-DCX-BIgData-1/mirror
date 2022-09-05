@@ -4,6 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<meta charset="UTF-8">
 <title>Arcana by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -12,9 +13,7 @@
 		<script src="webapp/jquery-3.6.0 min.js"></script>
 </head>
 <body class="is-preload">
-<div id="page-wrapper">
-
-			<!-- Header -->
+<!-- Header -->
 				<div id="header">
 
 					<!-- Logo -->
@@ -46,22 +45,14 @@
 								<!-- <li><a href="left-sidebar.html">Left Sidebar</a></li> -->
 								<!-- <li><a href="right-sidebar.html">Right Sidebar</a></li> -->
 								<li><a href="Reply.jsp">댓글관리</a></li>
-								<li><a href="Join.jsp">찜한곳/찜한곳 길찾기</a></li>
-								<li><a href="update.jsp">회원정보 수정</a></li>
+								<li><a href="MyLove.jsp">찜한곳/찜한곳 길찾기</a></li>
+								<li><a href="Join.jsp">회원정보 수정</a></li>
 								<li><a href="Join.jsp">회원탈퇴</a></li>
 							</ul>
-							    
 						</nav>
 
 				</div>
-				<%
-					// 세션에 저장된 닉네임 가져오기
-					// 형변환(다운캐스팅)
-					String nick = (String)session.getAttribute("nick");
-					String nick2 = request.getParameter("nick2");
-				%>
-				
-	<div class="quickmenu">
+<div class="quickmenu">
 	  <ul>
 	    <li><a href="#">소개</a></li>
 	    <li><a href="#">지역검색</a></li>
