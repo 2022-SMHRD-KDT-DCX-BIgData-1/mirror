@@ -32,7 +32,7 @@ public class LoginC extends HttpServlet {
 		if(loginMember != null) {
 			System.out.println("로그인 성공");
 			session.setAttribute("loginMember", loginMember);
-			response.sendRedirect("mainSuccess.jsp");
+			response.sendRedirect("LoginSuccess.jsp");
 			
 		}
 		else {
