@@ -33,7 +33,7 @@ public class JoinC extends HttpServlet {
 			// forward방식으로 이동해야 한다.
 			// 유지할 필요가 없으면 response.sendRedirect();로 이동
 			System.out.println("회원가입 성공");
-			RequestDispatcher rd = request.getRequestDispatcher("joinSuccess.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("main.jsp");
 			request.setAttribute("joinInfo", vo);
 			rd.forward(request, response);
 	

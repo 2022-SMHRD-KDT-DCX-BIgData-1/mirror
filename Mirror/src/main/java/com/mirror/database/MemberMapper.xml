@@ -29,7 +29,7 @@ select * from Blog where id = #{id}
  </select>
  
  <update id="updateMember" parameterType="com.mirror.domain.Member">
- 	update Member set m_pw=#{m_pw}, m_nick=#{m_nick} where m_id=#{m_id}
+ 	update Member set  m_pw=#{m_pw}, m_nick=#{m_nick} where m_id=#{m_id}
 </update>
  
  <delete id="deleteMember" parameterType="com.mirror.domain.Member">

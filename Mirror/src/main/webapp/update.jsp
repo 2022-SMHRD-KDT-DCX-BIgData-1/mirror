@@ -22,7 +22,7 @@
 								<form action="UpdateC" method="post">
 									<li>접속한 아이디:<%=loginMember.getM_id()%></li>
 									<li><input  name="m_nick" type="text" placeholder=<%=loginMember.getM_nick() %> style="width: 500px; margin: 0 auto;"></li>
-									<li><input name="m_pw" type="password" placeholder=<%=loginMember.getM_pw() %> style="width: 500px; margin: 0 auto;"></li>
+									<li><input name="m_pw" type="text" readonly placeholder=<%=loginMember.getM_pw() %> style="width: 500px; margin: 0 auto;"></li>
 									<li><input name="m_pw" type="password" placeholder=<%=loginMember.getM_pw() %> style="width: 500px; margin: 0 auto;"></li>
 									<li><input type="submit" value="회원정보 수정" class="button fit" style="width: 500px; margin: 0 auto;"></li>
 									<li><a href="MyPage.jsp"><input type="button" value="돌아가기" class="button fit" style="width: 500px; margin: 0 auto;"></a></li>

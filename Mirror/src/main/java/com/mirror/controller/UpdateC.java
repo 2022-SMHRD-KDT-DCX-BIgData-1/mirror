@@ -17,6 +17,8 @@ public class UpdateC extends HttpServlet {
 
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("[UpdateC]");
+		
 		request.setCharacterEncoding("utf-8");
 		String m_id =request.getParameter("m_id");
 		String m_pw = request.getParameter("m_pw");
@@ -37,7 +39,8 @@ public class UpdateC extends HttpServlet {
 			// forward방식으로 이동해야 한다.
 			// 유지할 필요가 없으면 response.sendRedirect();로 이동
 			System.out.println("회원정보 수정 성공");
-			
+			session.setAttribute("loginMember", updateMember);
+			response.sendRedirect("MyPage.jsp");
 		
 		}
 		else {
