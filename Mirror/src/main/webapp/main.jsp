@@ -65,7 +65,7 @@
 	
 	<div class="quickmenu">
 	  <ul>
-	    <li><a href="#">소개</a></li>
+	    <li><a href="IntroN.jsp">소개</a></li>
 	    <li><a href="#">지역검색</a></li>
 	    <li><a href="#">더보기</a></li>
 	  </ul>

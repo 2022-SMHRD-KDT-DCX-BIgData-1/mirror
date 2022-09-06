@@ -54,8 +54,8 @@
 	
 	<div class="quickmenu">
 	  <ul>
-	    <li><a href="#">소개</a></li>
-	    <li><a href="#">지역검색</a></li>
+	    <li><a href="IntroY1.jsp">소개</a></li>
+	    <li><a href="IntroY2.jsp">지역검색</a></li>
 	    <li><a href="#">더보기</a></li>
 	  </ul>
  </div>
