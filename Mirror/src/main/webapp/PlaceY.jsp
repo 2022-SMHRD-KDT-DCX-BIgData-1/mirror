@@ -9,7 +9,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
 <title>Arcana by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -18,14 +17,13 @@
 		<link rel="stylesheet" href="assets/css/quickmenu.css" />
 		<script src="webapp/jquery-3.6.0 min.js"></script>
 </body>
-</head>
 <body class="is-preload">
 	<%
 	 	Member loginMember = (Member)session.getAttribute("loginMember");
 	
 	
 	%>
-<div id="page-wrapper">
+<div id="page-wrapper"></div>
 
 			<!-- Header -->
 				<div id="header">
@@ -58,12 +56,9 @@
 								</li>
 								<!-- <li><a href="left-sidebar.html">Left Sidebar</a></li> -->
 								<!-- <li><a href="right-sidebar.html">Right Sidebar</a></li> -->
-								<li><a href="IntroY1.jsp">홈페이지소개</a></li>
-								<li><a href="IntroY2.jsp">홈페이지 의의</a></li>
-								<li><a href="IntroY3.jsp">홈페이지 목적</a></li>
-								<li><a href="IntroY4.jsp">홈페이지 방향성</a></li>
 								<li><a href="main.jsp">로그아웃</a></li>
 								<li><a href="MyPage.jsp">마이페이지</a></li>
+								
 							</ul>
 							    
 						</nav>
@@ -78,7 +73,37 @@
 	  </ul>
  </div>
 <!-- 출처: https://hongpage.kr/40 [홍페이지 HONGPAGE:티스토리] -->
-	<img  src="assets/css/images/intro1.jpg" width="1500px">			
+<form action="PlaceY.jsp">
+	<label for="Region"></label>
+	<select id="Region" name="Region">
+		<option value="1">전라남도</option>
+		<option value="2">전라북도</option>
+		<option value="3">경상남도</option>
+		<option value="4">경상북도</option>
+		<option value="5">충청남도</option>
+		<option value="6">충청북도</option>
+		<option value="7">강원도</option>
+		<option value="8">제주도</option>
+		<option value="9">경기도</option>
+		<option value="10">서울</option>
+		<option value="11">부산</option>
+		<option value="12">대구</option>
+		<option value="13">인천</option>
+		<option value="14">대전</option>
+		<option value="15">광주</option>
+	</select><br>
+	<input type="submit" value="검색">
+	<%--<input type="submit" value="검색"> --%>
+</form>				
+<form action="PlaceSearch.jsp">
+	<label for="Place"></label>
+	<select id="Place" name="Place">
+		<option value="1">역사적 장소</option>
+		<option value="2">지역 관광지</option>
+		<option value="3">지역 모범음식점</option>
+	</select><br>
+	<input type="submit" value="검색">
+</form>				
 <script>
 		$(document).ready(function(){
 			  var currentPosition = parseInt($(".quickmenu").css("top"));
