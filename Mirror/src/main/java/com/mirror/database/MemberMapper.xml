@@ -33,7 +33,7 @@ select * from Blog where id = #{id}
 </update>
  
  <delete id="deleteMember" parameterType="com.mirror.domain.Member">
- 	delete from Member where m_id=#{m_id}
+ 	delete from Member where m_pw=#{m_pw}
 </delete>
 
 </mapper>

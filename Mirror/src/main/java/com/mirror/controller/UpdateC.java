@@ -24,14 +24,14 @@ public class UpdateC extends HttpServlet {
 		HttpSession session = request.getSession();
 		
 		Member loginMember = (Member)session.getAttribute("loginMember");
+//		Member updateMember = new Member(loginMember.getM_id(), m_pw, m_nick);
 		Member updateMember = new Member(loginMember.getM_id(), m_pw, m_nick);
 		
-		loginMember.setM_id(updateMember.getM_id());
-		loginMember.setM_pw(updateMember.getM_pw());
 		loginMember.setM_nick(updateMember.getM_nick());
+		loginMember.setM_pw(updateMember.getM_pw());
 		
 		MemberDAO dao = new MemberDAO();
-		int cnt = dao.updateMember(loginMember);
+		int cnt = dao.updateMember(updateMember);
 		if(cnt >0) {
 			// 회원가입 정보를 유지해야 한채로 joinSuccess.jsp로 이동해야 한다면
 			// forward방식으로 이동해야 한다.

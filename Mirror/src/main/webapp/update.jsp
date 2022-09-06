@@ -6,7 +6,7 @@
 		<title>Forty by HTML5 UP</title>
 		<meta charset="UTF-8" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<link rel="stylesheet" href="assets/css/main.css" />		
+		<link rel="stylesheet" href="assets/css/update.css" />		
 	</head>
 	<body style="text-align: center;">
 
@@ -21,10 +21,11 @@
 							<li><h5>회원정보수정</h5></li>
 								<form action="UpdateC" method="post">
 									<li>접속한 아이디:<%=loginMember.getM_id()%></li>
-									<li><input  name="m_nick" type="text" placeholder="별명을 입력하세요" style="width: 500px; margin: 0 auto;"></li>
-									<li><input name="m_pw" type="password" placeholder="비밀번호를 입력하세요" style="width: 500px; margin: 0 auto;"></li>
-									<li><input name="m_pw" type="text" placeholder="비밀번호를 입력하세요" style="width: 500px; margin: 0 auto;"></li>
+									<li><input  name="m_nick" type="text" placeholder=<%=loginMember.getM_nick() %> style="width: 500px; margin: 0 auto;"></li>
+									<li><input name="m_pw" type="password" placeholder=<%=loginMember.getM_pw() %> style="width: 500px; margin: 0 auto;"></li>
+									<li><input name="m_pw" type="password" placeholder=<%=loginMember.getM_pw() %> style="width: 500px; margin: 0 auto;"></li>
 									<li><input type="submit" value="회원정보 수정" class="button fit" style="width: 500px; margin: 0 auto;"></li>
+									<li><a href="MyPage.jsp"><input type="button" value="돌아가기" class="button fit" style="width: 500px; margin: 0 auto;"></a></li>
 								</form>
 						</ul>
 					</nav>			

@@ -1,3 +1,4 @@
+<%@page import="com.mirror.domain.Member"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
@@ -7,18 +8,23 @@
 <title>Arcana by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/MyPage.css" />
 		<link rel="stylesheet" href="assets/css/quickmenu.css" />
 		<script src="webapp/jquery-3.6.0 min.js"></script>
 </head>
 <body class="is-preload">
+	<%
+	 	Member loginMember = (Member)session.getAttribute("loginMember");
+	
+	
+	%>
 <div id="page-wrapper">
 
 			<!-- Header -->
 				<div id="header">
 
 					<!-- Logo -->
-						<h1><a href="main.jsp" id="logo">Mirror</a></h1>
+						<h1><a href="LoginSuccess.jsp" id="logo">Mirror</a></h1>
 
 					<!-- Nav -->
 						<nav id="nav">
@@ -48,18 +54,12 @@
 								<li><a href="Reply.jsp">댓글관리</a></li>
 								<li><a href="Join.jsp">찜한곳/찜한곳 길찾기</a></li>
 								<li><a href="update.jsp">회원정보 수정</a></li>
-								<li><a href="Join.jsp">회원탈퇴</a></li>
+								<li><a href="delete.jsp">회원탈퇴</a></li>
 							</ul>
 							    
 						</nav>
 
 				</div>
-				<%
-					// 세션에 저장된 닉네임 가져오기
-					// 형변환(다운캐스팅)
-					String nick = (String)session.getAttribute("nick");
-					String nick2 = request.getParameter("nick2");
-				%>
 				
 	<div class="quickmenu">
 	  <ul>
@@ -69,6 +69,12 @@
 	  </ul>
  </div>
 <!-- 출처: https://hongpage.kr/40 [홍페이지 HONGPAGE:티스토리] -->
+				<c:choose>
+					<c:when test="${not empty loginMember}">
+						<h3>#{loginMember.m_nick }</h3>
+						<h3>상단의 메뉴를 골라주세요</h3> 
+					</c:when>
+				</c:choose>
 <script>
 		$(document).ready(function(){
 			  var currentPosition = parseInt($(".quickmenu").css("top"));
