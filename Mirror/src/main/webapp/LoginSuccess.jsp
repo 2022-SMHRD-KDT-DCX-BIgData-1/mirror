@@ -10,6 +10,12 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/quickmenu.css" />
 		<script src="webapp/jquery-3.6.0 min.js"></script>
+		<style>
+        path:hover{
+            fill: #DFE567;
+        }
+        
+    </style>
 	</head>
 <body class="is-preload">
 		<div id="page-wrapper">

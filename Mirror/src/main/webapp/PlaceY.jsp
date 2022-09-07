@@ -73,8 +73,8 @@
 	  </ul>
  </div>
 <!-- 출처: https://hongpage.kr/40 [홍페이지 HONGPAGE:티스토리] -->
+	<form action="PlaceSearch.jsp" method="get">
 	<label for="Region"></label>
-	<form action="PlaceSearch.jsp" method="post">
 	<select id="Region" name="Region">
 		<option value="1" selected="selected">전라남도</option>
 		<option value="2">전라북도</option>
@@ -91,6 +91,7 @@
 		<option value="13">인천</option>
 		<option value="14">대전</option>
 		<option value="15">광주</option>
+		<option value="16">울산</option>
 		<option value="16">울산</option>
 	</select>
 	

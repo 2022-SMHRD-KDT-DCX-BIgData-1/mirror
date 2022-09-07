@@ -22,7 +22,7 @@
 	
 	
 	%>
-<div id="page-wrapper">
+<div id="page-wrapper"></div>
 
 			<!-- Header -->
 				<div id="header">
@@ -73,8 +73,8 @@
  </div>
  
  <c:choose>
-	<c:when test="${param.Region==1} && ${param.Place==1 }" >
-		<img  src="assets/css/images/652.jpeg" width="1500px">
+	<c:when test="{param.Region == 1 && param.Place == 1 }" >
+		<img  src="assets/css/images/652.jpeg"><br>
 		<h3>역사적장소</h3> 
 	</c:when>
 </c:choose>
@@ -89,6 +89,7 @@
 			});
 		/* 출처: https://hongpage.kr/40 [홍페이지 HONGPAGE:티스토리] */
 	</script>
+	
 </body>
 
 </body>

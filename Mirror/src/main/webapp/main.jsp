@@ -4,71 +4,77 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <!--
-	Arcana by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+   Arcana by HTML5 UP
+   html5up.net | @ajlkn
+   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Arcana by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/quickmenu.css" />
-		<script src="webapp/jquery-3.6.0 min.js"></script>
-	</head>
-	<body class="is-preload">
-	<%
-	 Member loginMember = (Member)session.getAttribute("loginMember");
-	
-	
-	%>
-		<div id="page-wrapper">
+   <head>
+      <title>Arcana by HTML5 UP</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <link rel="stylesheet" href="assets/css/quickmenu.css" />
+      <script src="webapp/jquery-3.6.0 min.js"></script>
+      <style>
+        path:hover{
+            fill: #DFE567;
+        }
+        
+    </style>
+   </head>
+   <body class="is-preload">
+   <%
+    Member loginMember = (Member)session.getAttribute("loginMember");
+   
+   
+   %>
+      <div id="page-wrapper">
 
-			<!-- Header -->
-				<div id="header">
+         <!-- Header -->
+            <div id="header">
 
-					<!-- Logo -->
-						<h1><a href="main.jsp" id="logo">Mirror</a></h1>
+               <!-- Logo -->
+                  <h1><a href="main.jsp" id="logo">Mirror</a></h1>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<!-- <li class="current"><a href="index.html">Home</a></li> -->
-								<li>
-									<!-- <a href="#">Dropdown</a> -->
-									<ul>
-										<li><a href="#">Lorem dolor</a></li>
-										<li><a href="#">Magna phasellus</a></li>
-										<li><a href="#">Etiam sed tempus</a></li>
-										<li>
-											<a href="#">Submenu</a>
-											<ul>
-												<li><a href="#">Lorem dolor</a></li>
-												<li><a href="#">Phasellus magna</a></li>
-												<li><a href="#">Magna phasellus</a></li>
-												<li><a href="#">Etiam nisl</a></li>
-												<li><a href="#">Veroeros feugiat</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Veroeros feugiat</a></li>
-									</ul>
-								</li>
-								<!-- <li><a href="left-sidebar.html">Left Sidebar</a></li> -->
-								<!-- <li><a href="right-sidebar.html">Right Sidebar</a></li> -->
-								<li><a href="Login.jsp">로그인</a></li>
-								<li><a href="Join.jsp">회원가입</a></li>
-							</ul>
-						</nav>
+               <!-- Nav -->
+                  <nav id="nav">
+                     <ul>
+                        <!-- <li class="current"><a href="index.html">Home</a></li> -->
+                        <li>
+                           <!-- <a href="#">Dropdown</a> -->
+                           <ul>
+                              <li><a href="#">Lorem dolor</a></li>
+                              <li><a href="#">Magna phasellus</a></li>
+                              <li><a href="#">Etiam sed tempus</a></li>
+                              <li>
+                                 <a href="#">Submenu</a>
+                                 <ul>
+                                    <li><a href="#">Lorem dolor</a></li>
+                                    <li><a href="#">Phasellus magna</a></li>
+                                    <li><a href="#">Magna phasellus</a></li>
+                                    <li><a href="#">Etiam nisl</a></li>
+                                    <li><a href="#">Veroeros feugiat</a></li>
+                                 </ul>
+                              </li>
+                              <li><a href="#">Veroeros feugiat</a></li>
+                           </ul>
+                        </li>
+                        <!-- <li><a href="left-sidebar.html">Left Sidebar</a></li> -->
+                        <!-- <li><a href="right-sidebar.html">Right Sidebar</a></li> -->
+                        <li><a href="Login.jsp">로그인</a></li>
+                        <li><a href="Join.jsp">회원가입</a></li>
+                     </ul>
+                  </nav>
 
-				</div>
-	
-	<div class="quickmenu">
-	  <ul>
-	    <li><a href="IntroN.jsp">소개</a></li>
-	    <li><a href="#">지역검색</a></li>
-	    <li><a href="#">더보기</a></li>
-	  </ul>
+            </div>
+   
+   <div class="quickmenu">
+     <ul>
+       <li><a href="IntroN.jsp">소개</a></li>
+       <li><a href="#">지역검색</a></li>
+       <li><a href="#">더보기</a></li>
+     </ul>
  </div>
 <!-- 출처: https://hongpage.kr/40 [홍페이지 HONGPAGE:티스토리] -->
 
@@ -133,16 +139,15 @@
  <circle cx="509.5" cy="584.4" id="2">
  </circle>
 </svg>
-	<script>
-		$(document).ready(function(){
-			  var currentPosition = parseInt($(".quickmenu").css("top"));
-			  $(window).scroll(function() {
-			    var position = $(window).scrollTop(); 
-			    $(".quickmenu").stop().animate({"top":position+currentPosition+"px"},1000);
-			  });
-			});
-		/* 출처: https://hongpage.kr/40 [홍페이지 HONGPAGE:티스토리] */
-	</script>
-	</body>
+   <script>
+      $(document).ready(function(){
+           var currentPosition = parseInt($(".quickmenu").css("top"));
+           $(window).scroll(function() {
+             var position = $(window).scrollTop(); 
+             $(".quickmenu").stop().animate({"top":position+currentPosition+"px"},1000);
+           });
+         });
+      /* 출처: https://hongpage.kr/40 [홍페이지 HONGPAGE:티스토리] */
+   </script>
+   </body>
 </html>
-
