@@ -73,10 +73,10 @@
 	  </ul>
  </div>
 <!-- 출처: https://hongpage.kr/40 [홍페이지 HONGPAGE:티스토리] -->
-<form action="PlaceY.jsp">
 	<label for="Region"></label>
+	<form action="PlaceSearch.jsp" method="post">
 	<select id="Region" name="Region">
-		<option value="1">전라남도</option>
+		<option value="1" selected="selected">전라남도</option>
 		<option value="2">전라북도</option>
 		<option value="3">경상남도</option>
 		<option value="4">경상북도</option>
@@ -91,19 +91,19 @@
 		<option value="13">인천</option>
 		<option value="14">대전</option>
 		<option value="15">광주</option>
-	</select><br>
-	<input type="submit" value="검색">
-	<%--<input type="submit" value="검색"> --%>
-</form>				
-<form action="PlaceSearch.jsp">
+		<option value="16">울산</option>
+	</select>
+	
+	<%--<input type="submit" value="검색"> --%>			
+
 	<label for="Place"></label>
 	<select id="Place" name="Place">
-		<option value="1">역사적 장소</option>
+		<option value="1" selected="selected">역사적 장소</option>
 		<option value="2">지역 관광지</option>
 		<option value="3">지역 모범음식점</option>
 	</select><br>
 	<input type="submit" value="검색">
-</form>				
+	</form>			
 <script>
 		$(document).ready(function(){
 			  var currentPosition = parseInt($(".quickmenu").css("top"));
